@@ -1,0 +1,38 @@
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .register-form {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .avatar-selection {
+    margin-top: 16px;
+  }
+  
+  .avatar-selection-label {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .avatar-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.3s;
+  }
+  
+  .avatar-circle.selected {
+    border-color: #1890ff; /* Ant Design primary color */
+  }
+  
+  .avatar-circle:hover {
+    border-color: #40a9ff; /* Ant Design hover color */
+  }
+  

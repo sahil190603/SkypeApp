@@ -1,0 +1,47 @@
+.options-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
+}
+
+.option-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-icon {
+    font-size: 20px;
+    color: rgb(88, 85, 85);
+    margin-bottom: 5px;
+}
+
+.option-label {
+    text-align: center;
+    font-size: 10px;
+    color: #333;
+}
+
+
+.option-item.selected .option-icon {
+    color: rgb(0, 255, 217);
+}
+
+.option-icon:hover {
+    color: aqua;
+}
+
+@media (max-width: 600px) {
+    .options-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .option-item {
+        margin-bottom: 20px;
+    }
+}

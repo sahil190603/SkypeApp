@@ -1,0 +1,101 @@
+.chatlist{
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  max-height: 75vh;
+}
+.create-group-button{
+  margin: 7px;
+}
+
+.chatlist-container {
+  overflow-y: auto; 
+  padding: 7px;
+}
+.chatlist-container::-webkit-scrollbar {
+  width: 6px; 
+}
+.chatlist-container::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 4px; 
+}
+
+.chatlist-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chatlist-item:hover {
+  background-color: #e6fffb;
+  border-radius: 8px;
+}
+
+.chatlist-item.selected {
+  background-color: #b5f5ec; 
+  border-radius: 10px;
+}
+
+.chatlist-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.chatlist-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.chatlist-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chatlist-name {
+  font-family: cursive;
+  font-weight: lighter;
+  color: #333;
+}
+
+.chatlist-timestamp {
+  margin-top: 4px;
+  color: #8d8c8c;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.chatlist-message {
+  color: #555;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.create-group-button{
+  margin-bottom: 10px;
+}
+
+
+.unseen-message-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0 6px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
